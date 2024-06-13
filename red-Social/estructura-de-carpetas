@@ -1,0 +1,22 @@
+/mi-red-social
+├── backend
+│   ├── models
+│   │   └── User.js
+│   ├── routes
+│   │   ├── auth.js
+│   ├── controllers
+│   │   ├── authController.js
+│   ├── config
+│   │   └── db.js
+│   ├── server.js
+├── frontend
+│   ├── public
+│   │   └── index.html
+│   ├── src
+│   │   ├── components
+│   │   │   ├── Login.js
+│   │   │   └── Register.js
+│   │   ├── App.js
+│   │   ├── index.js
+│   ├── package.json
+├── package.json
