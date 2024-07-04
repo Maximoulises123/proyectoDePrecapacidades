@@ -1,4 +1,4 @@
-const User = require('../models/User');
+cconst User = require('../models/User');
 
 const authController = {
   register: async (req, res) => {
@@ -30,5 +30,17 @@ const authController = {
 };
 
 module.exports = authController;
+
+const deleteUser = require('..models/user.js');
+
+try {
+  userId = req.body.userId; // Asignación de userId dentro del bloque try
+  await User.findByIdAndDelete(userId);
+  res.status(200).json({ message: 'Cuenta eliminada exitosamente' });
+  } 
+  catch (error) {
+  res.status(500).json({ message: 'Error al eliminar la cuenta', error });
+}
+const editUser = require('');
 
   
